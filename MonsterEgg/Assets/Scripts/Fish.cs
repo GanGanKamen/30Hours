@@ -37,28 +37,5 @@ public class Fish : MonoBehaviour
         
 
     }
-    IEnumerator move(Vector3 vec)
-    {
-        transform.Translate(vec / 10);
-        yield return new WaitForSeconds(MoveTime / 10);
-        transform.Translate(vec / 10);
-        yield return new WaitForSeconds(MoveTime / 10);
-        transform.Translate(vec / 10);
-        yield return new WaitForSeconds(MoveTime / 10);
-        transform.Translate(vec / 10);
-        yield return new WaitForSeconds(MoveTime / 10);
-        transform.Translate(vec / 10);
-        yield return new WaitForSeconds(MoveTime / 10);
-        transform.Translate(vec / 10);
-        yield return new WaitForSeconds(MoveTime / 10);
-        transform.Translate(vec / 10);
-        yield return new WaitForSeconds(MoveTime / 10);
-        transform.Translate(vec / 10);
-        yield return new WaitForSeconds(MoveTime / 10);
-        transform.Translate(vec / 10);
-        yield return new WaitForSeconds(MoveTime / 10);
-        transform.Translate(vec / 10);
-        yield return new WaitForSeconds(MoveTime / 10);
-        
-    }
+   
 }
