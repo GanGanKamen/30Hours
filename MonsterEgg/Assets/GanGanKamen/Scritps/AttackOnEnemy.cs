@@ -38,11 +38,20 @@ public class AttackOnEnemy : MonoBehaviour
                 case Status.ChasePlayer:
                     break;
                 case Status.GotoEgg:
+                    gameObject.AddComponent<GotoEgg>();
                     break;
                 case Status.AttackEgg:
+                    gameObject.AddComponent<AttackEgg>();
                     break;
             }
             preStatus = nowStatus;
         }
+    }
+
+    public void ChangeToChasePlayer(CharacterCtrl targetCharacter)
+    {
+        nowStatus = Status.ChasePlayer;
+        gameObject.AddComponent<ChaseCharacter>();
+        gameObject.GetComponent<ChaseCharacter>().character = targetCharacter;
     }
 }

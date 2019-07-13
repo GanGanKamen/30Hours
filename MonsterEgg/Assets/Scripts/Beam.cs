@@ -44,10 +44,15 @@ public class Beam : MonoBehaviour
         {
             Enemy en = other.GetComponent<Enemy>();
             en.Life--;
+            if(other.GetComponent<AttackOnEnemy>().nowStatus != AttackOnEnemy.Status.ChasePlayer)
+            {
+                other.GetComponent<AttackOnEnemy>().ChangeToChasePlayer(Player.GetComponent<CharacterCtrl>());
+            }
+            
             if (en.Life < 0)
             {
                 Col.Human++;
-                Destroy(other);
+                Destroy(other.gameObject);
             }
         }
     }

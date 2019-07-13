@@ -9,10 +9,12 @@ public class CharacterCtrl : MonoBehaviour
     [SerializeField] private GameObject attack; //発射するもの
     public bool canDelivery;
     private Collected collected;
+    public bool isDown;
 
     // Start is called before the first frame update
     void Start()
     {
+        isDown = false;
         collected = GetComponent<Collected>();
     }
 
@@ -24,6 +26,10 @@ public class CharacterCtrl : MonoBehaviour
 
     public void CharacterMove(Vector3 direction)
     {
+        if(isDown == true)
+        {
+            return;
+        }
         transform.Translate(direction * Time.deltaTime * speed);
         body.transform.localRotation = Quaternion.LookRotation(direction);
     }
@@ -35,7 +41,7 @@ public class CharacterCtrl : MonoBehaviour
 
     private IEnumerator StartShoot()
     {
-        if(attack.active == true)
+        if(attack.active == true || isDown == true)
         {
             yield break;
         }
@@ -48,12 +54,39 @@ public class CharacterCtrl : MonoBehaviour
 
     public void Delivery()
     {
-        if(canDelivery == false)
+        if(canDelivery == false || isDown == true)
         {
             return;
         }
         EggCtrl egg = GameObject.FindGameObjectWithTag("Egg").GetComponent<EggCtrl>();
         egg.Delivery(collected.Cow, collected.Bird, collected.Fish, collected.Human);
         collected.Reste();
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Enemy")
+        {
+            StartCoroutine(StartDown());
+        }
+    }
+
+    private IEnumerator StartDown()
+    {
+        if(isDown == true)
+        {
+            yield break;
+        }
+        isDown = true;
+        yield return new WaitForSeconds(5f);
+        if(isDown == false)
+        {
+            yield break;
+        }
+        else
+        {
+            isDown = false;
+            yield break;
+        }
     }
 }

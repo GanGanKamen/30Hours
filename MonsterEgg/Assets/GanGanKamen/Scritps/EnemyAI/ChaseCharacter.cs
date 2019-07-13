@@ -3,18 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class GotoEgg : MonoBehaviour
+public class ChaseCharacter : MonoBehaviour
 {
     private AttackOnEnemy enemy;
     private NavMeshAgent agent;
-    private EggCtrl egg;
+    public CharacterCtrl character;
     private Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
         enemy = GetComponent<AttackOnEnemy>();
         agent = GetComponent<NavMeshAgent>();
-        egg = GameObject.FindGameObjectWithTag("Egg").GetComponent<EggCtrl>();
         if (GetComponent<Rigidbody>() == null)
         {
             gameObject.AddComponent<Rigidbody>();
@@ -26,18 +25,19 @@ public class GotoEgg : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        agent.destination = new Vector3(egg.transform.position.x, transform.position.y, egg.transform.position.z);
-        if (enemy.nowStatus != AttackOnEnemy.Status.GotoEgg)
+        agent.destination = Vector3.Scale(character.transform.position, new Vector3(1, 0, 1));
+        CheckDown();
+        if (enemy.nowStatus != AttackOnEnemy.Status.ChasePlayer)
         {
             Destroy(this);
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void CheckDown()
     {
-        if(collision.gameObject.tag == "Egg")
+        if(character.isDown == true)
         {
-            enemy.nowStatus = AttackOnEnemy.Status.AttackEgg;
+            enemy.nowStatus = AttackOnEnemy.Status.GotoEgg;
         }
     }
 }

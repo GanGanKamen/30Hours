@@ -18,7 +18,6 @@ public class EggSearch : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.tag);
         if(other.gameObject.tag == "Player")
         {
             CharacterCtrl character = other.GetComponent<CharacterCtrl>();
