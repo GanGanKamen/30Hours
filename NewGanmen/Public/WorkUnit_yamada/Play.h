@@ -5,8 +5,8 @@
  *  ACB  Ver.        : Ver.1.32.00
  *  File Path        : /Users/yamadachihiro/Documents/Sourcetree/30HJam/NewGanmen/Public/WorkUnit_yamada
  *  File Name        : Play.h
- *  File Size        : 998464 bytes
- *  Date Time        : 2019/07/13 17:32:40
+ *  File Size        : 40480 bytes
+ *  Date Time        : 2019/07/13 18:28:33
  *  Target           : Public
  *  Cues             : 6
  *  CueSheet Comment : 
@@ -19,11 +19,11 @@
 
 /* Cue List (Cue ID) */
 #define CRI_PLAY_BGM_PLAY             ( 0) /*  */
-#define CRI_PLAY_SE_USHISHOCK         ( 1) /*  */
 #define CRI_PLAY_SE_SAKANASHOCK       ( 2) /*  */
 #define CRI_PLAY_SE_TORISHOCK         ( 3) /*  */
 #define CRI_PLAY_SE_HEROSHOCK         ( 4) /*  */
 #define CRI_PLAY_SE_SHOT              ( 5) /*  */
+#define CRI_PLAY_SE_USHISHOCK         ( 6) /*  */
 
 /* Block List (Block Index) */
 #define CRI_PLAY_BLOCK_BGM_PLAY_INTRO       ( 0) /*  */
