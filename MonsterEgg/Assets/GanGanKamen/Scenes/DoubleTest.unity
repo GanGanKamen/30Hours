@@ -241,7 +241,7 @@ PrefabInstance:
     - target: {fileID: 2257874893235136894, guid: e5db64b482c3abe4fb325b5e682c8be9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2257874893235136894, guid: e5db64b482c3abe4fb325b5e682c8be9,
         type: 3}
@@ -459,6 +459,7 @@ GameObject:
   - component: {fileID: 369433302}
   - component: {fileID: 369433301}
   - component: {fileID: 369433305}
+  - component: {fileID: 369433306}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -543,7 +544,7 @@ RectTransform:
   - {fileID: 1064233512}
   - {fileID: 128274943}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -568,6 +569,27 @@ MonoBehaviour:
   heroText: {fileID: 1064233513}
   timeText: {fileID: 128274941}
   totalTime: 120
+--- !u!114 &369433306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369433300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 0
+  _cueName: BGM_Play
+  _cueSheet: Play
+  _use3dPositioning: 0
+  _loop: 1
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
 --- !u!1 &477932760
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,7 +677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1097578469, guid: fe299db5da866e6409a2d7e160efc5a8, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1097578469, guid: fe299db5da866e6409a2d7e160efc5a8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -671,58 +693,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe299db5da866e6409a2d7e160efc5a8, type: 3}
---- !u!1 &830548728
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 830548730}
-  - component: {fileID: 830548729}
-  m_Layer: 0
-  m_Name: BGM_Play(CriAtomSource)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &830548729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 830548728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playOnStart: 1
-  _cueName: BGM_Play
-  _cueSheet: Play
-  _use3dPositioning: 0
-  _loop: 1
-  _volume: 1
-  _pitch: 0
-  _androidUseLowLatencyVoicePool: 0
-  need_to_player_update_all: 1
---- !u!4 &830548730
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 830548728}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1060619290
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -773,7 +743,7 @@ PrefabInstance:
     - target: {fileID: 2257874893235136894, guid: e5db64b482c3abe4fb325b5e682c8be9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2257874893235136894, guid: e5db64b482c3abe4fb325b5e682c8be9,
         type: 3}
@@ -950,7 +920,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1125570273
 GameObject:
@@ -985,7 +955,7 @@ MonoBehaviour:
   cueSheets:
   - name: Play
     acbFile: Play.acb
-    awbFile: 
+    awbFile: Play.awb
     loaderStatus: 0
   dspBusSetting: 
   dontDestroyOnLoad: 0
@@ -1004,8 +974,35 @@ Transform:
   - {fileID: 205226096}
   - {fileID: 477932761}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1170700899 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1616947729830558044, guid: 8e995272da56a2349bcfb3e57febde46,
+    type: 3}
+  m_PrefabInstance: {fileID: 1616947730975540031}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1170700907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170700899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 0
+  _cueName: Voice_yuushaToujou
+  _cueSheet: Play
+  _use3dPositioning: 1
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
 --- !u!1001 &1235277240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1056,7 +1053,7 @@ PrefabInstance:
     - target: {fileID: 2257874893235136894, guid: e5db64b482c3abe4fb325b5e682c8be9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2257874893235136894, guid: e5db64b482c3abe4fb325b5e682c8be9,
         type: 3}
@@ -1449,7 +1446,7 @@ PrefabInstance:
     - target: {fileID: 1616947729830558037, guid: 8e995272da56a2349bcfb3e57febde46,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1616947729830558037, guid: 8e995272da56a2349bcfb3e57febde46,
         type: 3}

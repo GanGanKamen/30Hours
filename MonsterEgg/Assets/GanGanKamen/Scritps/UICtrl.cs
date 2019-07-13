@@ -22,6 +22,7 @@ public class UICtrl : MonoBehaviour
         gameStart = true;
         canCtrl = true;
         nowTime = totalTime;
+        GetComponent<CriAtomSource>().Play("BGM_Play");
     }
 
     // Update is called once per frame

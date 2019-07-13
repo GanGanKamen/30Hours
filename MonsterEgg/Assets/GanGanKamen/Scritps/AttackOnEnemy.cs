@@ -21,6 +21,7 @@ public class AttackOnEnemy : MonoBehaviour
         enemyMain = GetComponent<Enemy>();
         egg = GameObject.FindGameObjectWithTag("Egg").GetComponent<EggCtrl>();
         preStatus = nowStatus;
+        GetComponent<CriAtomSource>().Play("Voice_yuushaToujou");
     }
 
     // Update is called once per frame
