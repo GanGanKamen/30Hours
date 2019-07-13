@@ -169,6 +169,7 @@ GameObject:
   - component: {fileID: 4751677119801264330}
   - component: {fileID: 1485340946850863925}
   - component: {fileID: 5691362782223943095}
+  - component: {fileID: 2394265405011370213}
   - component: {fileID: 5691362782223943094}
   m_Layer: 11
   m_Name: Player1
@@ -184,7 +185,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4751677119801264329}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5, y: 1.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -221,6 +222,7 @@ MonoBehaviour:
   body: {fileID: 4751677118838287321}
   attack: {fileID: 5725007084772486520}
   canDelivery: 0
+  isDown: 0
 --- !u!54 &1485340946850863925
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -251,6 +253,22 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2394265405011370213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4751677119801264329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74c3e3a396e2b4c46a811bf7f1767092, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Fish: 0
+  Cow: 0
+  Bird: 0
+  Human: 0
 --- !u!114 &5691362782223943094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,6 +302,8 @@ GameObject:
   - component: {fileID: 5725007084772486517}
   - component: {fileID: 5725007084772486518}
   - component: {fileID: 5725007084772486519}
+  - component: {fileID: 3438556611471983953}
+  - component: {fileID: 3438556611471983954}
   m_Layer: 11
   m_Name: Attack
   m_TagString: Untagged
@@ -364,3 +384,37 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3438556611471983953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5725007084772486520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15afda234abef8d4582e35bb04bac274, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 4751677119801264329}
+--- !u!114 &3438556611471983954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5725007084772486520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnStart: 0
+  _cueName: SE_SakanaShock
+  _cueSheet: Play
+  _use3dPositioning: 1
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1

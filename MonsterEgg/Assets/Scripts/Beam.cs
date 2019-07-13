@@ -27,16 +27,19 @@ public class Beam : MonoBehaviour
             if (x == "Fish")
             {
                 Col.Fish++;
+                GetComponent<CriAtomSource>().Play("SE_SakanaShock");
                 Destroy(other.gameObject);
             }
             else if (x == "Cow")
             {
                 Col.Cow++;
+                GetComponent<CriAtomSource>().Play("SE_UshiShock");
                 Destroy(other.gameObject);
             }
             else if (x == "Bird")
             {
                 Col.Bird++;
+                GetComponent<CriAtomSource>().Play("SE_ToriShock");
                 Destroy(other.gameObject);
             }
         }
@@ -44,7 +47,8 @@ public class Beam : MonoBehaviour
         {
             Enemy en = other.GetComponent<Enemy>();
             en.Life--;
-            if(other.GetComponent<AttackOnEnemy>().nowStatus != AttackOnEnemy.Status.ChasePlayer)
+            GetComponent<CriAtomSource>().Play("SE_HeroShock");
+            if (other.GetComponent<AttackOnEnemy>().nowStatus != AttackOnEnemy.Status.ChasePlayer)
             {
                 other.GetComponent<AttackOnEnemy>().ChangeToChasePlayer(Player.GetComponent<CharacterCtrl>());
             }
