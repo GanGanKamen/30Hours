@@ -29,14 +29,14 @@ public class Beam : MonoBehaviour
                 Col.Fish++;
                 GetComponent<CriAtomSource>().Play("SE_SakanaShock");
                 Destroy(other.gameObject);
-                Spawner.FishRespawn = true;
+                Spawner.FishRespawn ++;
             }
             else if (x == "Cow")
             {
                 Col.Cow++;
                 GetComponent<CriAtomSource>().Play("SE_UshiShock");
                 Destroy(other.gameObject);
-                Spawner.CowRespawn = true;
+                Spawner.CowRespawn ++;
             }
             else if (x == "Bird")
             {
