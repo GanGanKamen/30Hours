@@ -14,7 +14,12 @@ public class UICtrl : MonoBehaviour
     [SerializeField] private Text heroText;
     [SerializeField] private Text timeText;
     [SerializeField] private int totalTime;
+    [SerializeField] private RawImage fadeImage;
     private float nowTime;
+    private float fadeAlpha;
+    private bool isFade;
+    public Transform[] points;
+    public GameObject hero;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +28,7 @@ public class UICtrl : MonoBehaviour
         canCtrl = true;
         nowTime = totalTime;
         GetComponent<CriAtomSource>().Play("BGM_Play");
+        fadeAlpha = 0;
     }
 
     // Update is called once per frame
@@ -30,6 +36,7 @@ public class UICtrl : MonoBehaviour
     {
         NumText();
         CountDown();
+        Fading();
     }
 
     private void NumText()
@@ -47,10 +54,51 @@ public class UICtrl : MonoBehaviour
         {
             nowTime -= Time.deltaTime;
         }
-        if((int)nowTime == 0)
+        if((int)nowTime == 0&&gameStart == true)
         {
-            gameStart = false;
-            canCtrl = false;
+            StartCoroutine(GameOver());
+        }
+        if((int)nowTime % 20 == 0)
+        {
+            HeroAdvent();
+        }
+    }
+
+    private void Fading()
+    {
+        if(isFade == true)
+        {
+            fadeAlpha += Time.deltaTime / 1.4f;
+        }
+        fadeImage.color = new Color(0, 0, 0, fadeAlpha);
+    }
+
+    private IEnumerator GameOver()
+    {
+        if (gameStart == false)
+        {
+            yield break;
+        }
+        gameStart = false;
+        canCtrl = false;
+        yield return new WaitForSeconds(1f);
+        isFade = true;
+        while(fadeAlpha <1)
+        {
+            yield return null;
+        }
+        isFade = false;
+    }
+
+    private void HeroAdvent()
+    {
+        GameObject[] nowHeros = GameObject.FindGameObjectsWithTag("Enemy");
+        if(nowHeros.Length == 0)
+        {
+            for(int i = 0; i < points.Length; i++)
+            {
+                Instantiate(hero, points[i].position, Quaternion.identity);
+            }
         }
     }
 }
