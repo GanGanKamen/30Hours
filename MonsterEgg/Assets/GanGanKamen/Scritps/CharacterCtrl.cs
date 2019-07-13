@@ -39,6 +39,7 @@ public class CharacterCtrl : MonoBehaviour
             yield break;
         }
         attack.SetActive(true);
+        GetComponent<CriAtomSource>().Play("SE_shot");
         yield return new WaitForSeconds(0.1f);
         attack.SetActive(false);
         yield break;
