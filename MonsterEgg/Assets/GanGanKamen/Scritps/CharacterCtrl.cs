@@ -5,12 +5,13 @@ using UnityEngine;
 public class CharacterCtrl : MonoBehaviour
 {
     public float speed;
+    public float dushSpeed;
     public GameObject body;  //モデルオブジェクト
     [SerializeField] private GameObject attack; //発射するもの
     public bool canDelivery;
     private Collected collected;
     public bool isDown;
-
+    public bool isDush;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,8 +31,16 @@ public class CharacterCtrl : MonoBehaviour
         {
             return;
         }
-        transform.Translate(direction * Time.deltaTime * speed);
-        body.transform.localRotation = Quaternion.LookRotation(direction);
+        if(isDush == false)
+        {
+            transform.Translate(direction * Time.deltaTime * speed);
+            body.transform.localRotation = Quaternion.LookRotation(direction);
+        }
+        else
+        {
+            transform.Translate(direction * Time.deltaTime * dushSpeed);
+            body.transform.localRotation = Quaternion.LookRotation(direction);
+        }
     }
 
     public void Shoot()
@@ -41,7 +50,7 @@ public class CharacterCtrl : MonoBehaviour
 
     private IEnumerator StartShoot()
     {
-        if(attack.active == true || isDown == true)
+        if (attack.active == true || isDown == true || isDush == true)
         {
             yield break;
         }
@@ -54,7 +63,7 @@ public class CharacterCtrl : MonoBehaviour
 
     public void Delivery()
     {
-        if(canDelivery == false || isDown == true)
+        if(canDelivery == false || isDown == true || isDush == true)
         {
             return;
         }

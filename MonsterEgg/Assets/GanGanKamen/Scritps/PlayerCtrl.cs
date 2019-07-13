@@ -20,6 +20,14 @@ public class PlayerCtrl : MonoBehaviour
 
     private void KeyCtrl()
     {
+        if (Dualshock4.Cross(dualshock4Num))
+        {
+            character.isDush = true;
+        }
+        else
+        {
+            character.isDush = false;
+        }
         if (Dualshock4.CircleDown(dualshock4Num))
         {
             character.Shoot();

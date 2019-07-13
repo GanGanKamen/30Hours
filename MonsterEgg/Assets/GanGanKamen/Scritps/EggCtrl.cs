@@ -23,6 +23,6 @@ public class EggCtrl : MonoBehaviour
         taurosNum += _taurosNum;
         birdNum += _birdNum;
         fishNum += _fishNum;
-        humanNum += humanNum;
+        humanNum += _humanNum;
     }
 }
