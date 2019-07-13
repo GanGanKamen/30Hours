@@ -14,6 +14,7 @@ public class CharacterCtrl : MonoBehaviour
     public bool isDush;
     [SerializeField]private float shootCoolTime;
     private bool canShoot;
+    [SerializeField] private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +45,12 @@ public class CharacterCtrl : MonoBehaviour
             transform.Translate(direction * Time.deltaTime * dushSpeed);
             body.transform.localRotation = Quaternion.LookRotation(direction);
         }
+        animator.SetBool("Dash", true);
+    }
+
+    public void CharacterStandby()
+    {
+        animator.SetBool("Dash", false);
     }
 
     public void Shoot()
@@ -58,6 +65,7 @@ public class CharacterCtrl : MonoBehaviour
             yield break;
         }
         attack.SetActive(true);
+        animator.SetTrigger("Attack");
         canShoot = false;
         GetComponent<CriAtomSource>().Play("SE_shot");
         yield return new WaitForSeconds(0.1f);
@@ -93,6 +101,7 @@ public class CharacterCtrl : MonoBehaviour
             yield break;
         }
         isDown = true;
+        animator.SetBool("Stan", true);
         yield return new WaitForSeconds(5f);
         if(isDown == false)
         {
@@ -101,6 +110,7 @@ public class CharacterCtrl : MonoBehaviour
         else
         {
             isDown = false;
+            animator.SetBool("Stan", false);
             yield break;
         }
     }

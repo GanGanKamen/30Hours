@@ -50,5 +50,9 @@ public class PlayerCtrl : MonoBehaviour
             //Dualshock4.LeftStick(dualshock4Num);
             character.CharacterMove(direction);
         }
+        else
+        {
+            character.CharacterStandby();
+        }
     }
 }

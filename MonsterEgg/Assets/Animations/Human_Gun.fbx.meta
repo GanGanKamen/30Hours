@@ -1,52 +1,75 @@
 fileFormatVersion: 2
-guid: 9b61412951d87fa458f1d199f7d1ba1a
+guid: 8e4b51685b3d3a345827ad10333be817
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Head
-    100002: Hips
-    100004: //RootNode
-    100006: LeftArm
-    100008: LeftFoot
-    100010: LeftForeArm
-    100012: LeftHand
-    100014: LeftLeg
-    100016: LeftShoulder
-    100018: LeftUpLeg
-    100020: Neck
-    100022: RightArm
-    100024: RightFoot
-    100026: RightForeArm
-    100028: RightHand
-    100030: RightLeg
-    100032: RightShoulder
-    100034: RightUpLeg
-    100036: Spine
-    100038: Spine1
-    100040: Spine2
-    400000: Head
-    400002: Hips
-    400004: //RootNode
-    400006: LeftArm
-    400008: LeftFoot
-    400010: LeftForeArm
-    400012: LeftHand
-    400014: LeftLeg
-    400016: LeftShoulder
-    400018: LeftUpLeg
-    400020: Neck
-    400022: RightArm
-    400024: RightFoot
-    400026: RightForeArm
-    400028: RightHand
-    400030: RightLeg
-    400032: RightShoulder
-    400034: RightUpLeg
-    400036: Spine
-    400038: Spine1
-    400040: Spine2
+    100000: Gun
+    100002: Head
+    100004: Hips
+    100006: //RootNode
+    100008: LeftArm
+    100010: LeftFoot
+    100012: LeftForeArm
+    100014: LeftHand
+    100016: LeftLeg
+    100018: LeftLeg 1
+    100020: LeftLeg1
+    100022: LeftShoulder
+    100024: LeftUpLeg
+    100026: Neck
+    100028: pCube3
+    100030: RightArm
+    100032: RightFoot
+    100034: RightForeArm
+    100036: RightHand
+    100038: RightHand 1
+    100040: RightHand1
+    100042: RightLeg
+    100044: RightLeg 1
+    100046: RightShoulder
+    100048: RightUpLeg
+    100050: RigthLeg1
+    100052: Spine
+    100054: Spine1
+    100056: Spine2
+    400000: Gun
+    400002: Head
+    400004: Hips
+    400006: //RootNode
+    400008: LeftArm
+    400010: LeftFoot
+    400012: LeftForeArm
+    400014: LeftHand
+    400016: LeftLeg
+    400018: LeftLeg 1
+    400020: LeftLeg1
+    400022: LeftShoulder
+    400024: LeftUpLeg
+    400026: Neck
+    400028: pCube3
+    400030: RightArm
+    400032: RightFoot
+    400034: RightForeArm
+    400036: RightHand
+    400038: RightHand 1
+    400040: RightHand1
+    400042: RightLeg
+    400044: RightLeg 1
+    400046: RightShoulder
+    400048: RightUpLeg
+    400050: RigthLeg1
+    400052: Spine
+    400054: Spine1
+    400056: Spine2
+    2100000: lambert1
+    2300000: Gun
+    3300000: Gun
+    4300000: pCube3
+    4300002: Gun
     7400000: Take 001
     9500000: //RootNode
+    13700000: pCube3
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -59,7 +82,8 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'Head' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -74,35 +98,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: Take 001
-      takeName: Take 001
-      firstFrame: 10
-      lastFrame: 70
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -166,7 +162,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: LeftLeg
+    - boneName: LeftLeg 1
       humanName: LeftLowerLeg
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -174,7 +170,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: RightLeg
+    - boneName: RightLeg 1
       humanName: RightLowerLeg
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -216,14 +212,6 @@ ModelImporter:
         modified: 0
     - boneName: Neck
       humanName: Neck
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Head
-      humanName: Head
       limit:
         min: {x: 0, y: 0, z: 0}
         max: {x: 0, y: 0, z: 0}
@@ -286,7 +274,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: RightHand
+    - boneName: RightHand 1
       humanName: RightHand
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -303,15 +291,55 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: Human_Walk(Clone)
+    - name: Human_Gun(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
+    - name: pCube3
+      parentName: Human_Gun(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftLeg
+      parentName: Human_Gun(Clone)
+      position: {x: -0.102517456, y: 0.007977351, z: 0.0033390468}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightLeg
+      parentName: Human_Gun(Clone)
+      position: {x: 0.102517, y: 0.00797735, z: 0.0033390468}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightHand
+      parentName: Human_Gun(Clone)
+      position: {x: 0.40992042, y: 0.60494196, z: 1.9640158e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightHand1
+      parentName: Human_Gun(Clone)
+      position: {x: 0.27856112, y: 0.6071262, z: -0.16801637}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 3, y: 3, z: 3}
+    - name: LeftLeg1
+      parentName: Human_Gun(Clone)
+      position: {x: -0.094125584, y: 0.15271156, z: 0.1741645}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 3, y: 3, z: 3}
+    - name: RigthLeg1
+      parentName: Human_Gun(Clone)
+      position: {x: 0.094125606, y: 0.15271156, z: 0.1741645}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 3, y: 3, z: 3}
+    - name: Gun
+      parentName: Human_Gun(Clone)
+      position: {x: -0, y: -0.0023235835, z: 0.012934941}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 5.0020227, y: 14.035126, z: 21.710165}
     - name: Hips
-      parentName: Human_Walk(Clone)
-      position: {x: -0, y: 0.25206432, z: -0.0013235862}
-      rotation: {x: 0.1534522, y: 0.07111447, z: 0.025896711, w: 0.9852536}
+      parentName: Human_Gun(Clone)
+      position: {x: -0, y: 0.3084712, z: -0.0013235862}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Spine
       parentName: Hips
@@ -321,7 +349,7 @@ ModelImporter:
     - name: Spine1
       parentName: Spine
       position: {x: 1.1832913e-32, y: 0.07991396, z: -0.0014336543}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      rotation: {x: -0.03580091, y: 0, z: -0, w: 0.99935895}
       scale: {x: 1, y: 1, z: 1}
     - name: Spine2
       parentName: Spine1
@@ -346,12 +374,12 @@ ModelImporter:
     - name: LeftArm
       parentName: LeftShoulder
       position: {x: -0.057163928, y: 0.018243806, z: -9.399253e-19}
-      rotation: {x: -0.0942725, y: 0.6557249, z: 0.5341385, w: 0.52519864}
+      rotation: {x: -0.0006192529, y: -0.000016617285, z: 0.00077446376, w: 0.9999995}
       scale: {x: 1, y: 1, z: 1}
     - name: LeftForeArm
       parentName: LeftArm
       position: {x: -0.1605455, y: -0.0024325075, z: 4.3334814e-17}
-      rotation: {x: 0.25088546, y: 0.3899856, z: 0.24737673, w: 0.85074824}
+      rotation: {x: -0.01453476, y: -0.00022908437, z: -0.0017205669, w: 0.9998929}
       scale: {x: 1, y: 1, z: 1}
     - name: LeftHand
       parentName: LeftForeArm
@@ -366,14 +394,14 @@ ModelImporter:
     - name: RightArm
       parentName: RightShoulder
       position: {x: 0.0571635, y: 0.018243, z: 4.1663264e-18}
-      rotation: {x: -0.50065905, y: -0.33022872, z: -0.568566, w: 0.5630473}
+      rotation: {x: 0.025570331, y: -0.012708865, z: -0.002291655, w: 0.9995896}
       scale: {x: 1, y: 1, z: 1}
     - name: RightForeArm
       parentName: RightArm
       position: {x: 0.16054599, y: -0.002432, z: -2.0373131e-17}
-      rotation: {x: 0.011427501, y: 0.9376489, z: 0.010687119, w: -0.3472317}
+      rotation: {x: 0.014537746, y: -0.0002291362, z: 0.0017240781, w: 0.99989283}
       scale: {x: 1, y: 1, z: 1}
-    - name: RightHand
+    - name: RightHand 1
       parentName: RightForeArm
       position: {x: 0.131355, y: -0.002433, z: -1.6933692e-17}
       rotation: {x: 0, y: -0, z: -0, w: 1}
@@ -381,30 +409,30 @@ ModelImporter:
     - name: LeftUpLeg
       parentName: Hips
       position: {x: -0.084147215, y: -0.00836099, z: 0.0013235862}
-      rotation: {x: -0.5128694, y: 0.01575676, z: -0.012373058, w: 0.85823286}
+      rotation: {x: 0.0015652307, y: 0.024891082, z: -0.0002845023, w: 0.9996889}
       scale: {x: 1, y: 1, z: 1}
-    - name: LeftLeg
+    - name: LeftLeg 1
       parentName: LeftUpLeg
       position: {x: -0.009978373, y: -0.14739868, z: 0.014787207}
-      rotation: {x: 0.3567546, y: -0.01416494, z: 0.026523974, w: 0.9337141}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: LeftFoot
-      parentName: LeftLeg
+      parentName: LeftLeg 1
       position: {x: -0.008391877, y: -0.1447342, z: -0.01144816}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: RightUpLeg
       parentName: Hips
       position: {x: 0.08414719, y: -0.00836122, z: 0.0013235862}
-      rotation: {x: -0.11029918, y: -0.08445034, z: -0.01909878, w: 0.99011993}
+      rotation: {x: 0.0015658336, y: -0.024901256, z: 0.0002846189, w: 0.9996887}
       scale: {x: 1, y: 1, z: 1}
-    - name: RightLeg
+    - name: RightLeg 1
       parentName: RightUpLeg
       position: {x: 0.0099784, y: -0.147398, z: 0.014787207}
-      rotation: {x: 0.38817105, y: 0.014485481, z: -0.02949796, w: 0.92100126}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: RightFoot
-      parentName: RightLeg
+      parentName: RightLeg 1
       position: {x: 0.0083914, y: -0.14473465, z: -0.01144816}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
