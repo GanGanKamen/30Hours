@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Animals
   - Enemy
+  - Egg
   layers:
   - Default
   - TransparentFX
