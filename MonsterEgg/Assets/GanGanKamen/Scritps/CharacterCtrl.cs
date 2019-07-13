@@ -6,8 +6,9 @@ public class CharacterCtrl : MonoBehaviour
 {
     public float speed;
     public GameObject body;  //モデルオブジェクト
-    [SerializeField] private Transform muzzle; //弾を発射する銃口
-    [SerializeField] private GameObject attack;
+    [SerializeField] private GameObject attack; //発射するもの
+    public bool canDelivery;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,5 +42,10 @@ public class CharacterCtrl : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         attack.SetActive(false);
         yield break;
+    }
+
+    public void Delivery()
+    {
+        
     }
 }

@@ -29,10 +29,10 @@ public class PlayerCtrl : MonoBehaviour
 
     private void CharaMove()
     {
-        if(Dualshock4.LeftStick(dualshock4Num).magnitude != 0)
+        if (Dualshock4.LeftStick(dualshock4Num).magnitude != 0)
         {
-            var direction = new Vector3(Dualshock4.LeftStick(dualshock4Num).x,0, Dualshock4.LeftStick(dualshock4Num).y);
-                //Dualshock4.LeftStick(dualshock4Num);
+            var direction = new Vector3(Dualshock4.LeftStick(dualshock4Num).x, 0, Dualshock4.LeftStick(dualshock4Num).y);
+            //Dualshock4.LeftStick(dualshock4Num);
             character.CharacterMove(direction);
         }
     }
