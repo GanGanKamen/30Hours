@@ -5,6 +5,18 @@
     <Orca OrcaName="atmcUserFile" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserFile">
       <Orca OrcaName="WorkUnit_yamada" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
       <Orca OrcaName="WorkUnit_yamada" orcaPath="CueSheetFolder/WorkUnit_yamada" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="Play" orcaPath="CueSheetFolder/WorkUnit_yamada/Play" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="Track_BGM_Play_ver.1" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/BGM_Play/Track_BGM_Play_ver.1" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="A" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/BGM_Play/A" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="Track_SE_biribiri" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/SE_HeroShock/Track_SE_biribiri" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="Track_SE_ban" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/SE_shot/Track_SE_ban" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="Track_SE_CuwDamage_01" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/SE_UshiShock/Track_SE_CuwDamage_01" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="Track_SE_CuwDamage_02" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/SE_UshiShock/Track_SE_CuwDamage_02" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="Track_SE_CuwDamage_03" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/SE_UshiShock/Track_SE_CuwDamage_03" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="SE_ToriShock" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/SE_ToriShock" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="Track_SE_BirdDamage_01" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/SE_ToriShock/Track_SE_BirdDamage_01" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="Track_SE_BirdDamage_02" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/SE_ToriShock/Track_SE_BirdDamage_02" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="Track_SE_BirdDamage_03" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/SE_ToriShock/Track_SE_BirdDamage_03" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
     </Orca>
   </OrcaTree>
 </OrcaTrees>
