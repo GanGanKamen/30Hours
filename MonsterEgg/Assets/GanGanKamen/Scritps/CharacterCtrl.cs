@@ -5,7 +5,8 @@ using UnityEngine;
 public class CharacterCtrl : MonoBehaviour
 {
     public float speed;
-    public GameObject body;
+    public GameObject body;  //モデルオブジェクト
+    [SerializeField] private Transform muzzle; //弾を発射する銃口
     // Start is called before the first frame update
     void Start()
     {
@@ -22,5 +23,10 @@ public class CharacterCtrl : MonoBehaviour
     {
         transform.Translate(direction * Time.deltaTime * speed);
         body.transform.localRotation = Quaternion.LookRotation(direction);
+    }
+
+    public void Shoot()
+    {
+
     }
 }
