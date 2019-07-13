@@ -59,6 +59,11 @@ public class Beam : MonoBehaviour
                 Destroy(other.gameObject);
             }
         }
+
+        else if(other.gameObject.tag == "Player")
+        {
+
+        }
     }
 
 }

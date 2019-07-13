@@ -15,7 +15,10 @@ public class PlayerCtrl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        KeyCtrl();
+        if(UICtrl.canCtrl == true)
+        {
+            KeyCtrl();
+        }       
     }
 
     private void KeyCtrl()

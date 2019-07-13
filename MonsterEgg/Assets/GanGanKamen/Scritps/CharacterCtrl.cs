@@ -12,10 +12,13 @@ public class CharacterCtrl : MonoBehaviour
     private Collected collected;
     public bool isDown;
     public bool isDush;
+    [SerializeField]private float shootCoolTime;
+    private bool canShoot;
     // Start is called before the first frame update
     void Start()
     {
         isDown = false;
+        canShoot = true;
         collected = GetComponent<Collected>();
     }
 
@@ -50,14 +53,17 @@ public class CharacterCtrl : MonoBehaviour
 
     private IEnumerator StartShoot()
     {
-        if (attack.active == true || isDown == true || isDush == true)
+        if (attack.active == true || isDown == true || isDush == true||canShoot == false)
         {
             yield break;
         }
         attack.SetActive(true);
+        canShoot = false;
         GetComponent<CriAtomSource>().Play("SE_shot");
         yield return new WaitForSeconds(0.1f);
         attack.SetActive(false);
+        yield return new WaitForSeconds(shootCoolTime);
+        canShoot = true;
         yield break;
     }
 
