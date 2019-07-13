@@ -8,11 +8,12 @@ public class CharacterCtrl : MonoBehaviour
     public GameObject body;  //モデルオブジェクト
     [SerializeField] private GameObject attack; //発射するもの
     public bool canDelivery;
+    private Collected collected;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        collected = GetComponent<Collected>();
     }
 
     // Update is called once per frame
@@ -47,6 +48,12 @@ public class CharacterCtrl : MonoBehaviour
 
     public void Delivery()
     {
-        
+        if(canDelivery == false)
+        {
+            return;
+        }
+        EggCtrl egg = GameObject.FindGameObjectWithTag("Egg").GetComponent<EggCtrl>();
+        egg.Delivery(collected.Cow, collected.Bird, collected.Fish, collected.Human);
+        collected.Reste();
     }
 }

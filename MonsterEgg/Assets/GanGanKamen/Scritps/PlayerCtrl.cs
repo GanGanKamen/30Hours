@@ -24,6 +24,10 @@ public class PlayerCtrl : MonoBehaviour
         {
             character.Shoot();
         }
+        else if (Dualshock4.TriangleDown(dualshock4Num))
+        {
+            character.Delivery();
+        }
         CharaMove();
     }
 
