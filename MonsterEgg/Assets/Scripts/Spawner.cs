@@ -50,11 +50,11 @@ public class Spawner : MonoBehaviour
     {
         pos = new Vector3(Random.Range(-50, 50), 0, Random.Range(-13, 31));
         spacecheck.transform.position = pos;
-        while (spacecheck.GetComponent<SpaceCheck>().Space == false)
+        /*while (spacecheck.GetComponent<SpaceCheck>().Space == false)
         {
             pos = new Vector3(Random.Range(-50, 50), 0, Random.Range(-13, 31));
             spacecheck.transform.position = pos;
-        }
+        }*/
         
         //Instantiate(cow,pos, Quaternion.identity);
         CowRespawn --;
@@ -65,11 +65,11 @@ public class Spawner : MonoBehaviour
     {
         pos2 = new Vector3(Random.Range(-10, 10), 0, Random.Range(-31, -16));
         spacecheck.transform.position = pos2;
-        while (spacecheck.GetComponent<SpaceCheck>().Space == false)
+        /*while (spacecheck.GetComponent<SpaceCheck>().Space == false)
         {
             pos2 = new Vector3(Random.Range(-10, 10), 0, Random.Range(-31, -16));
             spacecheck.transform.position = pos2;
-        }
+        }*/
         //Instantiate(fish, pos2, Quaternion.identity);
         FishRespawn --;
         StartCoroutine(wait(fish, pos2));
