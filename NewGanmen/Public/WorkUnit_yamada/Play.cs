@@ -23,6 +23,16 @@ namespace NewGanmen.Play {
 		public const int Voice_yuushaDown = (11);
 		///<summary></summary>
 		public const int Voice_yuushaAttack = (12);
+		///<summary></summary>
+		public const int Voice_sinjaDown = (13);
+		///<summary></summary>
+		public const int Voice_sinjaFukkatu = (14);
+		///<summary></summary>
+		public const int Voice_sinjaDamage = (15);
+		///<summary></summary>
+		public const int SE_tamagoWareru = (16);
+		///<summary></summary>
+		public const int SE_CountDown = (17);
 	}
 
 	public enum Cue {
@@ -48,5 +58,15 @@ namespace NewGanmen.Play {
 		Voice_yuushaDown = 11,
 		///<summary></summary>
 		Voice_yuushaAttack = 12,
+		///<summary></summary>
+		Voice_sinjaDown = 13,
+		///<summary></summary>
+		Voice_sinjaFukkatu = 14,
+		///<summary></summary>
+		Voice_sinjaDamage = 15,
+		///<summary></summary>
+		SE_tamagoWareru = 16,
+		///<summary></summary>
+		SE_CountDown = 17,
 	}
 }
