@@ -47,7 +47,8 @@ public class Beam : MonoBehaviour
         {
             Enemy en = other.GetComponent<Enemy>();
             en.Life--;
-            GetComponent<CriAtomSource>().Play("SE_HeroShock");
+            GetComponent<CriAtomSource>().Play("SE_yuushaShock");
+            other.gameObject.GetComponent<CriAtomSource>().Play("Voice_yuushaShock");
             if (other.GetComponent<AttackOnEnemy>().nowStatus != AttackOnEnemy.Status.ChasePlayer)
             {
                 other.GetComponent<AttackOnEnemy>().ChangeToChasePlayer(Player.GetComponent<CharacterCtrl>());
@@ -56,13 +57,14 @@ public class Beam : MonoBehaviour
             if (en.Life < 0)
             {
                 Col.Human++;
+                GetComponent<CriAtomSource>().Play("Voice_yuushaDown");
                 Destroy(other.gameObject);
             }
         }
 
         else if(other.gameObject.tag == "Player")
         {
-
+            other.gameObject.GetComponent<CharacterCtrl>().isDown = false;
         }
     }
 
