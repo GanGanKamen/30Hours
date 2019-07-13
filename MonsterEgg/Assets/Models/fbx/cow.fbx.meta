@@ -1,0 +1,156 @@
+fileFormatVersion: 2
+guid: 8b48ae695f12b7a4488cf55c6e23d15c
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: cow_walk:Cow
+    100004: cow_walk:Head
+    100006: cow_walk:Hips
+    100008: cow_walk:LeftBack
+    100010: cow_walk:LeftBackLeg
+    100012: cow_walk:LeftBackLeg1
+    100014: cow_walk:LeftBackLeg2
+    100016: cow_walk:LeftBackLeg3
+    100018: cow_walk:LeftFront
+    100020: cow_walk:LeftFrontLeg
+    100022: cow_walk:LeftFrontLeg1
+    100024: cow_walk:LeftFrontLeg2
+    100026: cow_walk:LeftFrontLeg3
+    100028: cow_walk:Neak
+    100030: cow_walk:RightBack
+    100032: cow_walk:RightBackLeg
+    100034: cow_walk:RightBackLeg1
+    100036: cow_walk:RightBackLeg2
+    100038: cow_walk:RightBackLeg3
+    100040: cow_walk:RightFront
+    100042: cow_walk:RightFrontLeg
+    100044: cow_walk:RightFrontLeg1
+    100046: cow_walk:RightFrontLeg2
+    100048: cow_walk:RightFrontLeg3
+    100050: cow_walk:Spine
+    100052: cow_walk:Spine1
+    100054: cow_walk:Tile
+    400000: //RootNode
+    400002: cow_walk:Cow
+    400004: cow_walk:Head
+    400006: cow_walk:Hips
+    400008: cow_walk:LeftBack
+    400010: cow_walk:LeftBackLeg
+    400012: cow_walk:LeftBackLeg1
+    400014: cow_walk:LeftBackLeg2
+    400016: cow_walk:LeftBackLeg3
+    400018: cow_walk:LeftFront
+    400020: cow_walk:LeftFrontLeg
+    400022: cow_walk:LeftFrontLeg1
+    400024: cow_walk:LeftFrontLeg2
+    400026: cow_walk:LeftFrontLeg3
+    400028: cow_walk:Neak
+    400030: cow_walk:RightBack
+    400032: cow_walk:RightBackLeg
+    400034: cow_walk:RightBackLeg1
+    400036: cow_walk:RightBackLeg2
+    400038: cow_walk:RightBackLeg3
+    400040: cow_walk:RightFront
+    400042: cow_walk:RightFrontLeg
+    400044: cow_walk:RightFrontLeg1
+    400046: cow_walk:RightFrontLeg2
+    400048: cow_walk:RightFrontLeg3
+    400050: cow_walk:Spine
+    400052: cow_walk:Spine1
+    400054: cow_walk:Tile
+    2100000: lambert1
+    4300000: cow_walk:Cow
+    9500000: //RootNode
+    13700000: cow_walk:Cow
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 25ca296c5983dd441b6295e6382e5eb9, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
