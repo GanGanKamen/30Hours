@@ -9,8 +9,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100116, guid: e600a5f86e44e764980c467a12a7b77b, type: 3}
       propertyPath: m_Name
-      value: human
+      value: human Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: e600a5f86e44e764980c467a12a7b77b, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a4730031b4d9ddc4187dc1153084c520, type: 2}
     - target: {fileID: 400116, guid: e600a5f86e44e764980c467a12a7b77b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -55,10 +59,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: e600a5f86e44e764980c467a12a7b77b, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: a4730031b4d9ddc4187dc1153084c520, type: 2}
     - target: {fileID: 13700000, guid: e600a5f86e44e764980c467a12a7b77b, type: 3}
       propertyPath: m_Bones.Array.data[0]
       value: 
