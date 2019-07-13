@@ -15,12 +15,16 @@ public class PlayerCtrl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CharaMove();
+        KeyCtrl();
     }
 
     private void KeyCtrl()
     {
-        
+        if (Dualshock4.CircleDown(dualshock4Num))
+        {
+            character.Shoot();
+        }
+        CharaMove();
     }
 
     private void CharaMove()

@@ -7,6 +7,7 @@ public class CharacterCtrl : MonoBehaviour
     public float speed;
     public GameObject body;  //モデルオブジェクト
     [SerializeField] private Transform muzzle; //弾を発射する銃口
+    [SerializeField] private GameObject attack;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,18 @@ public class CharacterCtrl : MonoBehaviour
 
     public void Shoot()
     {
+        StartCoroutine(StartShoot());
+    }
 
+    private IEnumerator StartShoot()
+    {
+        if(attack.active == true)
+        {
+            yield break;
+        }
+        attack.SetActive(true);
+        yield return new WaitForSeconds(0.1f);
+        attack.SetActive(false);
+        yield break;
     }
 }
