@@ -19,6 +19,7 @@ public class Cow : MonoBehaviour
         rb = gameObject.GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         cs = serch.GetComponent<CowSerch>();
+        time = MoveInterval - 1;
     }
 
     // Update is called once per frame
