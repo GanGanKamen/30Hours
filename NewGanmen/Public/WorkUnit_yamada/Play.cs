@@ -33,6 +33,8 @@ namespace NewGanmen.Play {
 		public const int SE_tamagoWareru = (16);
 		///<summary></summary>
 		public const int SE_CountDown = (17);
+		///<summary></summary>
+		public const int SE_sakanaShock = (18);
 	}
 
 	public enum Cue {
@@ -68,5 +70,7 @@ namespace NewGanmen.Play {
 		SE_tamagoWareru = 16,
 		///<summary></summary>
 		SE_CountDown = 17,
+		///<summary></summary>
+		SE_sakanaShock = 18,
 	}
 }
