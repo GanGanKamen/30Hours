@@ -28,12 +28,18 @@ public class SpaceCheck : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        count++;
+        if (other.gameObject.layer != 13&&other.gameObject.layer != 12)
+        {
+            count++;
+        }
     }
 
 
     private void OnTriggerExit(Collider other)
     {
-        count--;
+        if (other.gameObject.layer != 13 && other.gameObject.layer != 12)
+        {
+            count--;
+        }
     }
 }
