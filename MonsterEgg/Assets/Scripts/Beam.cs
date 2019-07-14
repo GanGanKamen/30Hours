@@ -67,6 +67,7 @@ public class Beam : MonoBehaviour
         else if(other.gameObject.tag == "Player")
         {
             other.gameObject.GetComponent<CharacterCtrl>().isDown = false;
+            other.gameObject.GetComponent<CharacterCtrl>().animator.SetBool("Stan", false);
         }
     }
 

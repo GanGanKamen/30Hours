@@ -6,27 +6,46 @@ public class CharacterCtrl : MonoBehaviour
 {
     public float speed;
     public float dushSpeed;
+    public float collectedSpeed;
     public GameObject body;  //モデルオブジェクト
     [SerializeField] private GameObject attack; //発射するもの
     public bool canDelivery;
     private Collected collected;
     public bool isDown;
     public bool isDush;
+    public bool isCollected;
     [SerializeField]private float shootCoolTime;
     private bool canShoot;
-    [SerializeField] private Animator animator;
+    public Animator animator;
+    [SerializeField] private GameObject bag;
+    public GameObject collectMark;
     // Start is called before the first frame update
     void Start()
     {
         isDown = false;
         canShoot = true;
         collected = GetComponent<Collected>();
+        collectMark.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        CollectionCheck();
+    }
+    
+    private void CollectionCheck()
+    {
+        if(collected.Cow + collected.Fish + collected.Bird + collected.Human > 0)
+        {
+            isCollected = true;
+            bag.SetActive(true);
+        }
+        else
+        {
+            isCollected = false;
+            bag.SetActive(false);
+        }
     }
 
     public void CharacterMove(Vector3 direction)
@@ -35,22 +54,32 @@ public class CharacterCtrl : MonoBehaviour
         {
             return;
         }
-        if(isDush == false)
+        if(isCollected == false)
         {
-            transform.Translate(direction * Time.deltaTime * speed);
-            body.transform.localRotation = Quaternion.LookRotation(direction);
+            if (isDush == false)
+            {
+                transform.Translate(direction * Time.deltaTime * speed);
+                body.transform.localRotation = Quaternion.LookRotation(direction);
+            }
+            else
+            {
+                transform.Translate(direction * Time.deltaTime * dushSpeed);
+                body.transform.localRotation = Quaternion.LookRotation(direction);
+            }
+            animator.SetBool("Dash", true);
         }
         else
         {
-            transform.Translate(direction * Time.deltaTime * dushSpeed);
+            transform.Translate(direction * Time.deltaTime * collectedSpeed);
             body.transform.localRotation = Quaternion.LookRotation(direction);
+            animator.SetBool("Walk", true);
         }
-        animator.SetBool("Dash", true);
     }
 
     public void CharacterStandby()
     {
         animator.SetBool("Dash", false);
+        animator.SetBool("Walk", false);
     }
 
     public void Shoot()
@@ -83,6 +112,7 @@ public class CharacterCtrl : MonoBehaviour
         }
         EggCtrl egg = GameObject.FindGameObjectWithTag("Egg").GetComponent<EggCtrl>();
         egg.Delivery(collected.Cow, collected.Bird, collected.Fish, collected.Human);
+        animator.SetTrigger("Throw");
         collected.Reste();
     }
 

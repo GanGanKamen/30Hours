@@ -15,7 +15,7 @@ public class Bird : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         if (B_type == 0)
         {
-            pos = new Vector3(-50, 0, Random.Range(-20, 20));
+            pos = new Vector3(-50, 1, Random.Range(-20, 20));
             vec = new Vector3(speed, 0, Random.Range(-speed+0.2f, speed-0.2f));
             transform.position = pos;
             transform.LookAt(transform.position + vec);
@@ -23,21 +23,21 @@ public class Bird : MonoBehaviour
         }
         else if(B_type == 1)
         {
-            pos = new Vector3(50, 0, Random.Range(-20, 20));
+            pos = new Vector3(50, 1, Random.Range(-20, 20));
             vec = new Vector3(-speed, 0, Random.Range(-speed+0.2f, speed-0.2f));
             transform.position = pos;
             transform.LookAt(transform.position + vec);
         }
         else if(B_type == 2)
         {
-            pos = new Vector3(Random.Range(-40, 40),0,30);
+            pos = new Vector3(Random.Range(-40, 40),1,30);
             vec = new Vector3(Random.Range(-speed+ 0.2f, speed- 0.2f),0,-1);
             transform.position = pos;
             transform.LookAt(transform.position + vec);
         }
         else if(B_type == 3)
         {
-            pos = new Vector3(Random.Range(-40, 40), 0, -30);
+            pos = new Vector3(Random.Range(-40, 40), 1, -30);
             vec = new Vector3(Random.Range(-speed+ 0.2f, speed- 0.2f), 0, 1);
             transform.position = pos;
             transform.LookAt(transform.position + vec);

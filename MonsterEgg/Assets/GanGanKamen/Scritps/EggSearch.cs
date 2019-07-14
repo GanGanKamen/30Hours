@@ -7,7 +7,7 @@ public class EggSearch : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -22,6 +22,10 @@ public class EggSearch : MonoBehaviour
         {
             CharacterCtrl character = other.GetComponent<CharacterCtrl>();
             character.canDelivery = true;
+            if(character.isCollected == true)
+            {
+                character.collectMark.SetActive(true);
+            }
         }
     }
 
@@ -31,6 +35,7 @@ public class EggSearch : MonoBehaviour
         {
             CharacterCtrl character = other.GetComponent<CharacterCtrl>();
             character.canDelivery = false;
+            character.collectMark.SetActive(false);
         }
     }
 }
