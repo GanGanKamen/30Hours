@@ -27,6 +27,7 @@ public class GotoEgg : MonoBehaviour
     void Update()
     {
         agent.destination = new Vector3(egg.transform.position.x, transform.position.y, egg.transform.position.z);
+        enemy.animator.SetBool("Dash", true);
         if (enemy.nowStatus != AttackOnEnemy.Status.GotoEgg)
         {
             Destroy(this);

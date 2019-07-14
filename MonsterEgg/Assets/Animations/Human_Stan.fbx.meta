@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b6a75dccd830579438e5a4e6d8b0e68b
+guid: 4f9e90a2f2078464fb40de33a838d137
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -78,8 +78,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Take 001
       takeName: Take 001
-      firstFrame: 5
-      lastFrame: 25
+      firstFrame: 10
+      lastFrame: 60
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -87,8 +87,8 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
       loopBlendPositionY: 1
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
@@ -303,13 +303,13 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: Human_Standby(Clone)
+    - name: Human_Stan(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Hips
-      parentName: Human_Standby(Clone)
+      parentName: Human_Stan(Clone)
       position: {x: -0, y: 0.3084712, z: -0.0013235862}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
