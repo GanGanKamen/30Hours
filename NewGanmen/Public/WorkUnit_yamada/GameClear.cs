@@ -9,6 +9,8 @@ namespace NewGanmen.GameClear {
 		public const int SE_hebi = (2);
 		///<summary></summary>
 		public const int SE_doragon = (3);
+		///<summary></summary>
+		public const int SE_ningen = (21);
 	}
 
 	public enum Cue {
@@ -20,5 +22,7 @@ namespace NewGanmen.GameClear {
 		SE_hebi = 2,
 		///<summary></summary>
 		SE_doragon = 3,
+		///<summary></summary>
+		SE_ningen = 21,
 	}
 }

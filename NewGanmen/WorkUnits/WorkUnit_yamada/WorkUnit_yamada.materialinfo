@@ -8,6 +8,7 @@
           <Orca OrcaName="BGM_Play_Intro.wav" BitsPerSamples="24" Channels="2" EncodeFileSize="192420" ReloopEnd="288000" ResamplingRate="48000" SampleFrames="288000" SamplingRate="48000" SourceFileSize="1728080" StreamType="Stream" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
           <Orca OrcaName="BGM_Play_main.wav" BitsPerSamples="24" Channels="2" ReloopEnd="1152000" ResamplingRate="48000" SampleFrames="1152000" SamplingRate="48000" SourceFileSize="6912080" StreamType="Stream" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
           <Orca OrcaName="BGM_end.wav" BitsPerSamples="24" Channels="2" EncodeFileSize="768028" ReloopEnd="1152000" ResamplingRate="48000" SampleFrames="1152000" SamplingRate="48000" SourceFileSize="6912080" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
+          <Orca OrcaName="BGM_badend.wav" BitsPerSamples="24" Channels="2" EncodeFileSize="168550" ReloopEnd="252000" ResamplingRate="48000" SampleFrames="252000" SamplingRate="48000" SourceFileSize="1512080" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
         </Orca>
         <Orca OrcaName="SE" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveformSubFolder">
           <Orca OrcaName="SE_ban.wav" BitsPerSamples="24" Channels="1" ReloopEnd="72961" ResamplingRate="48000" SampleFrames="72961" SamplingRate="48000" SourceFileSize="218963" StreamType="Stream" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
@@ -27,6 +28,7 @@
           <Orca OrcaName="SE_doragon.wav" BitsPerSamples="24" Channels="2" EncodeFileSize="192420" ReloopEnd="288000" ResamplingRate="48000" SampleFrames="288000" SamplingRate="48000" SourceFileSize="1728080" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
           <Orca OrcaName="SE_hebi.wav" BitsPerSamples="24" Channels="2" EncodeFileSize="173324" ReloopEnd="259588" ResamplingRate="48000" SampleFrames="259588" SamplingRate="48000" SourceFileSize="1557608" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
           <Orca OrcaName="SE_kurage.wav" BitsPerSamples="24" Channels="2" EncodeFileSize="191056" ReloopEnd="286319" ResamplingRate="48000" SampleFrames="286319" SamplingRate="48000" SourceFileSize="1717994" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
+          <Orca OrcaName="SE_maou.wav" BitsPerSamples="24" Channels="1" EncodeFileSize="128312" ReloopEnd="384000" ResamplingRate="48000" SampleFrames="384000" SamplingRate="48000" SourceFileSize="1152080" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
         </Orca>
         <Orca OrcaName="Voice_yuusya" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveformSubFolder">
           <Orca OrcaName="Voice_guwaa.wav" BitsPerSamples="24" Channels="1" EncodeFileSize="14418" ReloopEnd="42000" ResamplingRate="48000" SampleFrames="42000" SamplingRate="48000" SourceFileSize="126080" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
@@ -54,6 +56,9 @@
           <Orca OrcaName="Voice_noudameda.wav" BitsPerSamples="24" Channels="1" EncodeFileSize="72388" ReloopEnd="216000" ResamplingRate="48000" SampleFrames="216000" SamplingRate="48000" SourceFileSize="648080" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
           <Orca OrcaName="Voice_tikusyou.wav" BitsPerSamples="24" Channels="1" EncodeFileSize="80231" ReloopEnd="240000" ResamplingRate="48000" SampleFrames="240000" SamplingRate="48000" SourceFileSize="720080" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
           <Orca OrcaName="Voice_yarareta.wav" BitsPerSamples="24" Channels="1" EncodeFileSize="72388" ReloopEnd="216000" ResamplingRate="48000" SampleFrames="216000" SamplingRate="48000" SourceFileSize="648080" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
+          <Orca OrcaName="Voice_yoisyo1.wav" BitsPerSamples="24" Channels="1" EncodeFileSize="16123" ReloopEnd="48000" ResamplingRate="48000" SampleFrames="48000" SamplingRate="48000" SourceFileSize="144080" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
+          <Orca OrcaName="Voice_yoisyo2.wav" BitsPerSamples="24" Channels="1" EncodeFileSize="16123" ReloopEnd="48000" ResamplingRate="48000" SampleFrames="48000" SamplingRate="48000" SourceFileSize="144080" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
+          <Orca OrcaName="Voice_oosamekudasai.wav" BitsPerSamples="24" Channels="2" EncodeFileSize="32150" ReloopEnd="48000" ResamplingRate="48000" SampleFrames="48000" SamplingRate="48000" SourceFileSize="288080" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
         </Orca>
       </Orca>
     </Orca>
