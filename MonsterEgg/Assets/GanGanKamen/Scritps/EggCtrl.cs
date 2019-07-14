@@ -8,10 +8,12 @@ public class EggCtrl : MonoBehaviour
     public int hp;
     public Material mat;
     public Texture t1,t2,t3,t4,t5,t6,t7,t8,t9,t10;
+    public GameObject birthObj;
     // Start is called before the first frame update
     void Start()
     {
         mat.SetTexture("_MainTex", t1);
+        birthObj.SetActive(false);
     }
 
     // Update is called once per frame

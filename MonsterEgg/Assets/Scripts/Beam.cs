@@ -67,9 +67,14 @@ public class Beam : MonoBehaviour
 
         else if(other.gameObject.tag == "Player")
         {
-            other.gameObject.GetComponent<CriAtomSource>().Play("Voice_sinjaFukkatu");
-            other.gameObject.GetComponent<CharacterCtrl>().isDown = false;
-            other.gameObject.GetComponent<CharacterCtrl>().animator.SetBool("Stan", false);
+            if(other.gameObject.GetComponent<CharacterCtrl>().isDown == true)
+            {
+                other.gameObject.GetComponent<CriAtomSource>().Play("Voice_sinjaFukkatu");
+                other.gameObject.GetComponent<CharacterCtrl>().isDown = false;
+                other.gameObject.GetComponent<CharacterCtrl>().animator.SetBool("Stan", false);
+                other.gameObject.GetComponent<CharacterCtrl>().starObj.SetActive(false);
+            }
+            
         }
     }
 

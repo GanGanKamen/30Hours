@@ -19,6 +19,7 @@ public class CharacterCtrl : MonoBehaviour
     public Animator animator;
     [SerializeField] private GameObject bag;
     public GameObject collectMark;
+    public GameObject starObj;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,7 @@ public class CharacterCtrl : MonoBehaviour
         canShoot = true;
         collected = GetComponent<Collected>();
         collectMark.SetActive(false);
+        starObj.SetActive(false);
     }
 
     // Update is called once per frame
@@ -115,6 +117,7 @@ public class CharacterCtrl : MonoBehaviour
         animator.SetTrigger("Throw");
         GetComponent<CriAtomSource>().Play("SE_sasageru");
         GetComponent<CriAtomSource>().Play("Voice_shinjaOosamekudasai");
+        GameObject sasageru = Instantiate(ResourcesCtrl.sasageru, new Vector3(egg.transform.position.x, 10f, egg.transform.position.z), Quaternion.Euler(90,0,90));
         collected.Reste();
     }
 
@@ -135,6 +138,7 @@ public class CharacterCtrl : MonoBehaviour
         isDown = true;
         animator.SetBool("Stan", true);
         GetComponent<CriAtomSource>().Play("Voice_sinjaDamage");
+        starObj.SetActive(true);
         yield return new WaitForSeconds(5f);
         if(isDown == false)
         {
@@ -145,6 +149,7 @@ public class CharacterCtrl : MonoBehaviour
             GetComponent<CriAtomSource>().Play("Voice_sinjaFukkatu");
             isDown = false;
             animator.SetBool("Stan", false);
+            starObj.SetActive(false);
             yield break;
         }
     }

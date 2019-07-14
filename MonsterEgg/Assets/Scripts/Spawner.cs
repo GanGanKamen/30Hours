@@ -50,12 +50,12 @@ public class Spawner : MonoBehaviour
     {
         pos = new Vector3(Random.Range(-50, 50), 0, Random.Range(-13, 31));
         spacecheck.transform.position = pos;
-       /* while (spacecheck.GetComponent<SpaceCheck>().Space == false)
+       /*while (spacecheck.GetComponent<SpaceCheck>().Space == false)
         {
             pos = new Vector3(Random.Range(-50, 50), 0, Random.Range(-13, 31));
             spacecheck.transform.position = pos;
-        }
-        */
+        }*/
+        
         //Instantiate(cow,pos, Quaternion.identity);
         CowRespawn --;
         StartCoroutine(wait(cow, pos));

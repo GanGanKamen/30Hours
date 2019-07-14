@@ -104,7 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bird: {fileID: 1392370701, guid: 0f364ab3a683e7644a490181af45b84b, type: 3}
   cow: {fileID: 94046480, guid: 2e94b1bb564933e4ca325c6b44fa7e5c, type: 3}
-  fish: {fileID: 2257874893235136868, guid: c350780a4a6f7f94aa983063d18e73f8, type: 3}
+  fish: {fileID: 2257874893235136868, guid: e5db64b482c3abe4fb325b5e682c8be9, type: 3}
   spacecheck: {fileID: 2714063445568735020}
   SummonInterval: 10
   MaxSimultaneousNum: 3

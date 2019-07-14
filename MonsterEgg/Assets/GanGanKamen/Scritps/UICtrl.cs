@@ -75,6 +75,7 @@ public class UICtrl : MonoBehaviour
         }
         gameStart = false;
         canCtrl = false;
+        egg.birthObj.SetActive(true);
         yield return new WaitForSeconds(1f);
         SwitchEnding();
         yield break;
