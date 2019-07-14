@@ -16,6 +16,8 @@ public class UICtrl : MonoBehaviour
     [SerializeField] private int totalTime;
     [SerializeField] private RawImage fadeImage;
     private float nowTime;
+    private float fadeAlpha;
+    private bool isFade;
     public Transform[] points;
     public GameObject hero;
     // Start is called before the first frame update
@@ -26,6 +28,7 @@ public class UICtrl : MonoBehaviour
         canCtrl = true;
         nowTime = totalTime;
         GetComponent<CriAtomSource>().Play("BGM_Play");
+        fadeAlpha = 0;
     }
 
     // Update is called once per frame
@@ -33,14 +36,15 @@ public class UICtrl : MonoBehaviour
     {
         NumText();
         CountDown();
+        Fading();
     }
 
     private void NumText()
     {
-        cawText.text = egg.taurosNum.ToString();
-        fishText.text = egg.fishNum.ToString();
-        birdText.text = egg.birdNum.ToString();
-        heroText.text = egg.humanNum.ToString();
+        cawText.text = "牛×" + egg.taurosNum.ToString();
+        fishText.text = "魚×" + egg.fishNum.ToString();
+        birdText.text = "鳥×" + egg.birdNum.ToString();
+        heroText.text = "勇者×" + egg.humanNum.ToString();
         timeText.text = ((int)nowTime).ToString();
     }
 
@@ -60,6 +64,15 @@ public class UICtrl : MonoBehaviour
         }
     }
 
+    private void Fading()
+    {
+        if(isFade == true)
+        {
+            fadeAlpha += Time.deltaTime / 1.4f;
+        }
+        fadeImage.color = new Color(0, 0, 0, fadeAlpha);
+    }
+
     private IEnumerator GameOver()
     {
         if (gameStart == false)
@@ -69,6 +82,12 @@ public class UICtrl : MonoBehaviour
         gameStart = false;
         canCtrl = false;
         yield return new WaitForSeconds(1f);
+        isFade = true;
+        while(fadeAlpha <1)
+        {
+            yield return null;
+        }
+        isFade = false;
     }
 
     private void HeroAdvent()

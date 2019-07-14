@@ -116,7 +116,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nowStatus: 0
-  animator: {fileID: 2222778042721720169}
 --- !u!114 &1616947729830558043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,11 +231,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 623864816947290268, guid: e6ea623373f337047ab11a16b420200b,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 53fa10cad7d64e84b914f823c59333db, type: 2}
     - target: {fileID: 623864816951369308, guid: e6ea623373f337047ab11a16b420200b,
         type: 3}
       propertyPath: m_Bones.Array.data[0]
@@ -347,12 +341,6 @@ PrefabInstance:
 --- !u!4 &2222778042711914749 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 623864816957067016, guid: e6ea623373f337047ab11a16b420200b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1616947729025906677}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &2222778042721720169 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 623864816947290268, guid: e6ea623373f337047ab11a16b420200b,
     type: 3}
   m_PrefabInstance: {fileID: 1616947729025906677}
   m_PrefabAsset: {fileID: 0}
