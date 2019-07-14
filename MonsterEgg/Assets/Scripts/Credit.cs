@@ -18,7 +18,7 @@ public class Credit : MonoBehaviour
     {
         if (Dualshock4.CrossDown(0))
         {
-            SceneManager.LoadScene("Title");
+            Fader.switchScene("Title");
         }
     }
 }
