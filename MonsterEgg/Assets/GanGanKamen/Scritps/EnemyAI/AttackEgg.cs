@@ -45,6 +45,7 @@ public class AttackEgg : MonoBehaviour
             egg.hp -= 1;
             egg.changeTex();
             enemy.animator.SetTrigger("Attack");
+            GetComponent<CriAtomSource>().Play("Voice_yuushaAttack");
         }
         else
         {

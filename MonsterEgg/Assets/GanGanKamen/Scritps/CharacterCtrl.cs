@@ -113,6 +113,8 @@ public class CharacterCtrl : MonoBehaviour
         EggCtrl egg = GameObject.FindGameObjectWithTag("Egg").GetComponent<EggCtrl>();
         egg.Delivery(collected.Cow, collected.Bird, collected.Fish, collected.Human);
         animator.SetTrigger("Throw");
+        GetComponent<CriAtomSource>().Play("SE_sasageru");
+        GetComponent<CriAtomSource>().Play("Voice_shinjaOosamekudasai");
         collected.Reste();
     }
 
@@ -132,6 +134,7 @@ public class CharacterCtrl : MonoBehaviour
         }
         isDown = true;
         animator.SetBool("Stan", true);
+        GetComponent<CriAtomSource>().Play("Voice_sinjaDamage");
         yield return new WaitForSeconds(5f);
         if(isDown == false)
         {
@@ -139,6 +142,7 @@ public class CharacterCtrl : MonoBehaviour
         }
         else
         {
+            GetComponent<CriAtomSource>().Play("Voice_sinjaFukkatu");
             isDown = false;
             animator.SetBool("Stan", false);
             yield break;
