@@ -39,11 +39,13 @@ public class Title : MonoBehaviour
         {
             if(x == 0)
             {
-                SceneManager.LoadScene("Main");
+                Fader.switchScene("Main");
+                //SceneManager.LoadScene("Main");
             }
             else
             {
-                SceneManager.LoadScene("Credit");
+                Fader.switchScene("Credit");
+                //SceneManager.LoadScene("Credit");
             }
         }
     }
