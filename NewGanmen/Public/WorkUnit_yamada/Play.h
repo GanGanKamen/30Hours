@@ -5,15 +5,15 @@
  *  ACB  Ver.        : Ver.1.32.00
  *  File Path        : /Users/yamadachihiro/Documents/Sourcetree/30HJam/NewGanmen/Public/WorkUnit_yamada
  *  File Name        : Play.h
- *  File Size        : 1046368 bytes
- *  Date Time        : 2019/07/14 11:13:33
+ *  File Size        : 1207040 bytes
+ *  Date Time        : 2019/07/14 16:04:29
  *  Target           : Public
- *  Cues             : 19
+ *  Cues             : 20
  *  CueSheet Comment : 
  *  Stream Awb Path  : /Users/yamadachihiro/Documents/Sourcetree/30HJam/NewGanmen/Public/WorkUnit_yamada/Play.awb
  *===========================================================================*/
 
-#define CRI_PLAY_CUENUM (19)
+#define CRI_PLAY_CUENUM (20)
 
 /* AISAC Control List (AISAC Control ID) */
 
@@ -37,6 +37,7 @@
 #define CRI_PLAY_SE_SAKANASHOCK       (18) /*  */
 #define CRI_PLAY_VOICE_SINJAYOISYO    (19) /*  */
 #define CRI_PLAY_VOICE_SHINJAOOSAMEKUDASAI (20) /*  */
+#define CRI_PLAY_SE_UKA               (21) /*  */
 
 /* Block List (Block Index) */
 #define CRI_PLAY_BLOCK_BGM_PLAY_INTRO       ( 0) /*  */

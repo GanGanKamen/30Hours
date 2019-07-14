@@ -5,7 +5,6 @@
     <Orca OrcaName="atmcUserFile" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserFile">
       <Orca OrcaName="WorkUnit_yamada" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
       <Orca OrcaName="WorkUnit_yamada" orcaPath="CueSheetFolder/WorkUnit_yamada" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
-      <Orca OrcaName="Play" orcaPath="CueSheetFolder/WorkUnit_yamada/Play" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
       <Orca OrcaName="Track_BGM_Play_ver.1" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/BGM_Play/Track_BGM_Play_ver.1" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
       <Orca OrcaName="A" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/BGM_Play/A" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
       <Orca OrcaName="Track_SE_biribiri" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/SE_yuushaShock/Track_SE_biribiri" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
@@ -39,6 +38,22 @@
       <Orca OrcaName="Track_Voice_buni" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/Voice_sinjaDamage/Track_Voice_buni" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
       <Orca OrcaName="Track_Voice_gue" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/Voice_sinjaDamage/Track_Voice_gue" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
       <Orca OrcaName="Track_Voice_gunyo" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/Voice_sinjaDamage/Track_Voice_gunyo" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="Track_SE_wareru" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/SE_tamagoWareru/Track_SE_wareru" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="Track_SE_countDown" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/SE_CountDown/Track_SE_countDown" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="Track_SE_fishShock-01" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/SE_sakanaShock/Track_SE_fishShock-01" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="Track_SE_fishShock-02" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/SE_sakanaShock/Track_SE_fishShock-02" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="Track_SE_fishShock-03" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/SE_sakanaShock/Track_SE_fishShock-03" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="Track_Voice_yoisyo1" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/Voice_sinjaYoisyo/Track_Voice_yoisyo1" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="Track_Voice_yoisyo2" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/Voice_sinjaYoisyo/Track_Voice_yoisyo2" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="Track_Voice_oosamekudasai" orcaPath="CueSheetFolder/WorkUnit_yamada/Play/Voice_shinjaOosamekudasai/Track_Voice_oosamekudasai" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="Track_BGM_end" orcaPath="CueSheetFolder/WorkUnit_yamada/GameClear/BGM_GameClear/Track_BGM_end" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="Track_SE_kurage" orcaPath="CueSheetFolder/WorkUnit_yamada/GameClear/SE_kurage/Track_SE_kurage" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="Track_SE_hebi" orcaPath="CueSheetFolder/WorkUnit_yamada/GameClear/SE_hebi/Track_SE_hebi" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="Track_SE_doragon" orcaPath="CueSheetFolder/WorkUnit_yamada/GameClear/SE_doragon/Track_SE_doragon" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="SE_ningen" orcaPath="CueSheetFolder/WorkUnit_yamada/GameClear/SE_ningen" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="Track_SE_maou" orcaPath="CueSheetFolder/WorkUnit_yamada/GameClear/SE_ningen/Track_SE_maou" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="BGM_BadEnd" orcaPath="CueSheetFolder/WorkUnit_yamada/GameOver/BGM_BadEnd" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      <Orca OrcaName="Track_BGM_badend" orcaPath="CueSheetFolder/WorkUnit_yamada/GameOver/BGM_BadEnd/Track_BGM_badend" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
     </Orca>
   </OrcaTree>
 </OrcaTrees>

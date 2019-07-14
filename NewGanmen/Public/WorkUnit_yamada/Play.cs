@@ -39,6 +39,8 @@ namespace NewGanmen.Play {
 		public const int Voice_sinjaYoisyo = (19);
 		///<summary></summary>
 		public const int Voice_shinjaOosamekudasai = (20);
+		///<summary></summary>
+		public const int SE_uka = (21);
 	}
 
 	public enum Cue {
@@ -80,5 +82,7 @@ namespace NewGanmen.Play {
 		Voice_sinjaYoisyo = 19,
 		///<summary></summary>
 		Voice_shinjaOosamekudasai = 20,
+		///<summary></summary>
+		SE_uka = 21,
 	}
 }
