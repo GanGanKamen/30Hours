@@ -43,6 +43,7 @@ public class AttackEgg : MonoBehaviour
         {
             nowAttackCount = 0;
             egg.hp -= 1;
+            egg.changeTex();
             enemy.animator.SetTrigger("Attack");
         }
         else
