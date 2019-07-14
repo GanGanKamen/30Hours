@@ -26,6 +26,7 @@ public class ChaseCharacter : MonoBehaviour
     void Update()
     {
         agent.destination = Vector3.Scale(character.transform.position, new Vector3(1, 0, 1));
+        enemy.animator.SetBool("Dash", true);
         CheckDown();
         if (enemy.nowStatus != AttackOnEnemy.Status.ChasePlayer)
         {
