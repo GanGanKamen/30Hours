@@ -33,6 +33,13 @@ public class UICtrl : MonoBehaviour
     {
         NumText();
         CountDown();
+        if(egg.hp == 0)
+        {
+            egg.hp = 999;
+            canCtrl = false;
+            gameStart = false;
+            Fader.switchScene("GameOver");
+        }
     }
 
     private void NumText()
@@ -68,7 +75,10 @@ public class UICtrl : MonoBehaviour
         }
         gameStart = false;
         canCtrl = false;
+        egg.birthObj.SetActive(true);
         yield return new WaitForSeconds(1f);
+        SwitchEnding();
+        yield break;
     }
 
     private void HeroAdvent()
@@ -79,6 +89,43 @@ public class UICtrl : MonoBehaviour
             for(int i = 0; i < points.Length; i++)
             {
                 Instantiate(hero, points[i].position, Quaternion.identity);
+            }
+        }
+    }
+
+    private void SwitchEnding()
+    {
+        if(egg.birdNum + egg.taurosNum + egg.humanNum + egg.fishNum < 15)
+        {
+            Fader.switchScene("End_N");
+        }
+        else if(egg.birdNum == egg.taurosNum&&egg.birdNum == egg.humanNum && egg.birdNum == egg.fishNum)
+        {
+            Fader.switchScene("End_G");
+        }
+        else
+        {
+            var numList = new List<int>();
+            numList.Add(egg.birdNum);
+            numList.Add(egg.taurosNum);
+            numList.Add(egg.fishNum);
+            numList.Add(egg.humanNum);
+            numList.Sort((a, b) => b - a);
+            if(numList[0] == egg.birdNum)
+            {
+                Fader.switchScene("End_B");
+            }
+            if(numList[0] == egg.taurosNum)
+            {
+                Fader.switchScene("End_C");
+            }
+            if (numList[0] == egg.fishNum)
+            {
+                Fader.switchScene("End_F");
+            }
+            if(numList[0] == egg.humanNum)
+            {
+                Fader.switchScene("End_H");
             }
         }
     }
